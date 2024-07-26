@@ -41,7 +41,7 @@ Windows, Linux, and Mac Builds are still on [itch.io](https://arianlust.itch.io/
   * [Moddimation](https://github.com/Moddimation)
   * [BluCor](https://github.com/BluCorDev)
   * [Frosty Cake](https://github.com/xFrostyCake123)
-  * [Windows10V](https://github.com/Windows10V)
+  * [Windows10V](https://github.com/Windows10V1)
   
 </details>
   
