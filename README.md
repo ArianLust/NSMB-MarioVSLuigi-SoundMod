@@ -20,7 +20,7 @@ Windows, Linux, and Mac Builds are still on [itch.io](https://arianlust.itch.io/
 <details>
   <summary><h2>Opening in Unity Editor</h2></summary>
 
-1. Install Unity 2022.3.16f1 (or newer) via Unity Hub (Installs > Install Editor > Scroll to bottom, if you do not see the version of your choice here, switch to the "Archive" tab and open the "download archive" link)
+1. Install Unity 2022.1.12f1 (or newer) via Unity Hub (Installs > Install Editor > Scroll to bottom, if you do not see the version of your choice here, switch to the "Archive" tab and open the "download archive" link)
 2. Download and install [git](https://git-scm.com/downloads). Do NOT use the .zip download, as it will cause errors within Unity.
 3. Open Command Prompt (Windows) or Terminal (MacOS / Linux)
 4. Navigate to the folder you want the source code to be in using `cd <path>`. For example, `cd %USERPROFILE%\Documents` will save it in My Documents.
@@ -29,3 +29,21 @@ Windows, Linux, and Mac Builds are still on [itch.io](https://arianlust.itch.io/
 6. Open the project in Unity Hub (gray "Open" button in top right)
 7. Change the Unity Editor to use your computer's platform in File > Build Settings
 8. Create a build using "Build and Run" inside File > Build Settings, or Ctrl+B
+
+</details>
+<details>
+  <summary><h2>Credits</h2></summary>
+  
+  ## Mod Creator:
+  * [Lust](https://github.com/ArianLust)
+  
+  ### Contributors:
+  * [Moddimation](https://github.com/Moddimation)
+  * [BluCor](https://github.com/BluCorDev)
+  * [Frosty Cake](https://github.com/xFrostyCake123)
+  * [Windows10V](https://github.com/Windows10V1)
+  
+</details>
+  
+  
+  
