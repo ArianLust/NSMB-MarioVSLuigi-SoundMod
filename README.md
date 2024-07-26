@@ -29,3 +29,21 @@ Windows, Linux, and Mac Builds are still on [itch.io](https://arianlust.itch.io/
 6. Open the project in Unity Hub (gray "Open" button in top right)
 7. Change the Unity Editor to use your computer's platform in File > Build Settings
 8. Create a build using "Build and Run" inside File > Build Settings, or Ctrl+B
+
+</details>
+<details>
+  <summary><h2>Credits</h2></summary>
+  
+  ## Mod Creator:
+  * [Lust](https://github.com/ArianLust)
+  
+  ### Contributors:
+  * [Moddimation](https://github.com/Moddimation)
+  * [BluCor](https://github.com/BluCorDev)
+  * [Frosty Cake](https://github.com/xFrostyCake123)
+  * [Windows10V](https://github.com/Windows10V)
+  
+</details>
+  
+  
+  
