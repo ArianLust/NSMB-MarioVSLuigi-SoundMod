@@ -760,6 +760,14 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     public void ConfirmSound() {
         sfx.PlayOneShot(Enums.Sounds.UI_Decide.GetClip());
     }
+    public void CursorSound()
+    {
+        sfx.PlayOneShot(Enums.Sounds.UI_Cursor.GetClip());
+    }
+        public void levelstartSound()
+    {
+        sfx.PlayOneShot(Enums.Sounds.UI_levelstart.GetClip());
+    }
 
     public void ConnectToDropdownRegion() {
         Region targetRegion = pingSortedRegions[region.value];
