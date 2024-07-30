@@ -166,6 +166,7 @@ public static class Enums {
         public static string GameState { get; } = "S";
         public static string Status { get; } = "St";
         public static string Spectator { get; } = "Sp";
+        public static string Einheimischer { get; } = "Ar";
     }
     public static class NetPlayerGameState {
         public static string Stars { get; } = "S";
