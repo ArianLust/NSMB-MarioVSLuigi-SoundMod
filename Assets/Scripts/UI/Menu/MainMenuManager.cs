@@ -64,6 +64,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
     private readonly Dictionary<Player, double> lastMessage = new();
 
+    private int chatTextLength = 0;
+
     Coroutine updatePingCoroutine;
 
     public ColorChooser colorManager;
@@ -593,7 +595,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         PhotonNetwork.LocalPlayer.SetCustomProperties(new() {
             [Enums.NetPlayerProperties.GameState] = null,
             [Enums.NetPlayerProperties.Status] = Debug.isDebugBuild || Application.isEditor,
-            [Enums.NetPlayerProperties.Einheimischer] = true,
+            [Enums.NetPlayerProperties.ModUser] = true,
         });
         if (updatePingCoroutine == null)
             updatePingCoroutine = StartCoroutine(UpdatePing());
@@ -983,6 +985,17 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         //Bounds bounds = txtObject.GetComponent<TextMeshProUGUI>().textBounds;
         //tf.sizeDelta = new Vector2(tf.sizeDelta.x, bounds.max.y - bounds.min.y - 15f);
     }
+    public void PlayTypingSound() {
+        int currentLength = chatTextField.text.Length;
+
+        if (currentLength < chatTextLength) 
+            sfx.PlayOneShot(Enums.Sounds.UI_ChatDelete.GetClip());
+        else if (currentLength > chatTextLength) 
+            sfx.PlayOneShot(Enums.Sounds.UI_ChatType.GetClip());
+
+        chatTextLength = currentLength;
+    }
+
     public void SendChat() {
         double time = lastMessage.GetValueOrDefault(PhotonNetwork.LocalPlayer);
         if (PhotonNetwork.Time - time < 0.75f)
@@ -996,6 +1009,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             RunCommand(text[1..].Split(" "));
             return;
         }
+
+        sfx.PlayOneShot(Enums.Sounds.UI_ChatSend.GetClip());
 
         PhotonNetwork.RaiseEvent((byte) Enums.NetEventIds.PlayerChatMessage, text, NetworkUtils.EventAll, SendOptions.SendReliable);
         StartCoroutine(SelectNextFrame(chatTextField));
