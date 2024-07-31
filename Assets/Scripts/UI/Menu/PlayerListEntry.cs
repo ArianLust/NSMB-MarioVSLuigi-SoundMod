@@ -66,8 +66,8 @@ public class PlayerListEntry : MonoBehaviour {
         nameText.text = permissionSymbol + characterSymbol + player.GetUniqueNickname();
         pingText.text = $"<color={pingColor}>{ping}";
 
-        bool exists = Utils.GetCustomProperty(Enums.NetPlayerProperties.Einheimischer, out bool vanilla, player.CustomProperties);
-        iconText.text = vanilla && !exists ? "<sprite=5>" : "sprite=6"; // test sprites
+        bool arier = Utils.GetCustomProperty(Enums.NetPlayerProperties.Einheimischer, out bool sss, player.CustomProperties);
+        iconText.text = arier ? "<sprite=50>" : "<sprite=49>"; // test sprites
 
         Transform parent = transform.parent;
         int childIndex = 0;
