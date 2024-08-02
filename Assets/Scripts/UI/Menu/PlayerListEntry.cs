@@ -32,7 +32,11 @@ public class PlayerListEntry : MonoBehaviour {
     public void Update() {
         if (nameText.text.Contains("Lust")) {
             nameText.color = Utils.GetLustColor();
-        } else if (nameText.text.Contains("ipodtouch0218") || nameText.text.Contains("mindnomad") || nameText.text.Contains("MPS64") || nameText.text.Contains("Fawndue")) {
+        } 
+        else if (nameText.text.Contains("Moddimation")){
+            nameText.color = Utils.GetModdimationColor();
+        }
+        else if (nameText.text.Contains("ipodtouch0218") || nameText.text.Contains("mindnomad") || nameText.text.Contains("MPS64") || nameText.text.Contains("Fawndue")) {
             nameText.color = Utils.GetRainbowColor();
         }
     }

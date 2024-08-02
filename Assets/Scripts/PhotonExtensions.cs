@@ -15,6 +15,7 @@ public static class PhotonExtensions {
         ["c87758a5234d9719c063437231f6e29712c27ebfa8972ee63c793db1e1f4957b"] = "Lust",
         ["7677b1c69e1b86d5347826c5cac6b7f8b0b6d52bb9f73c7e910a15ee4294e7c8"] = "LustoUnity",
         ["ab6fd4f73691d9a7ab554b9c3d2795dcbbc9e4327e2715472bb159da7a4163ee"] = "LustoMobile",
+        ["1bbb13851c77acb10295648b52a3769473e8e2fc67465e90bfac05b338521eb1"] = "Moddimation",
     };
 
     public static bool IsMineOrLocal(this PhotonView view) {

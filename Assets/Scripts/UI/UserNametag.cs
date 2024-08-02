@@ -72,6 +72,10 @@ if (rainbowName) {
             {
                 text.color = Utils.GetLustColor();
             }
+            else if (text.text.Contains("Moddimation"))
+            {
+                text.color = Utils.GetModdimationColor();
+            }
             else if (text.text.Contains("ipodtouch0218") || text.text.Contains("mindnomad") || text.text.Contains("MPS64") || text.text.Contains("Fawndue"))
             {
         }

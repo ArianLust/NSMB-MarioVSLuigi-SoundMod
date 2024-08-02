@@ -417,6 +417,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
         Instance = this;
 
+        GetComponent<LoopingMusic>().Play( GetComponent<MusicRandomizer>().GetMusic() );
+
         //Clear game-specific settings so they don't carry over
         HorizontalCamera.OFFSET_TARGET = 0;
         HorizontalCamera.OFFSET = 0;
@@ -1366,6 +1368,10 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         Application.OpenURL("https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/releases/latest");
         OpenMainMenu();
     }
+        public void OpenSourceCodePage() {
+        Application.OpenURL("https://github.com/ArianLust/NSMB-MarioVSLuigi-SoundMod");
+    }
+
 
     public void ChangePrivate() {
         privateToggleRoom.SetIsOnWithoutNotify(!PhotonNetwork.CurrentRoom.IsVisible);

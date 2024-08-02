@@ -593,5 +593,10 @@ namespace NSMB.Utils {
             time %= 1;
             return GlobalController.Instance.LustGradient.Evaluate((float) time);
         }
+        public static Color GetModdimationColor() {
+            double time = PhotonNetwork.Time * 0.1;
+            time %= 1;
+            return GlobalController.Instance.ModdimationGradient.Evaluate((float) time);
+        }
     }
 }
