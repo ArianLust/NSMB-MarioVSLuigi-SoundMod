@@ -8,7 +8,7 @@ A Mod for the Fangame NSMB-MarioVSLuigi
 
 Includes all SFXs Music etc. on a way better sounding quality!
 
-# PLEASE CREDIT ME IF YOUR GOING TO USE THE SOUNDS!!!
+# PLEASE (EXTRA) CREDIT ME IF YOUR GOING TO USE THE SOUNDS!!!
 
 
 ## Download
