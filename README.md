@@ -9,13 +9,14 @@ A Mod for the Fangame NSMB-MarioVSLuigi
 Includes all SFXs Music etc. on a way better sounding quality!
 
 # PLEASE (EXTRA) CREDIT ME IF YOUR GOING TO USE THE SOUNDS!!!
+it really took ages and its the least you can do.
 
 
 ## Download
 
 [Play now in browser on itch.io!](https://arianlust.itch.io/nsmbmvlsm)
 
-Windows, Linux, and Mac Builds are still on [itch.io](https://arianlust.itch.io/nsmbmvlsm) but soon are on GitHub!
+Windows, Linux, Mac and android Builds are on [itch.io](https://arianlust.itch.io/nsmbmvlsm)!
 
 <details>
   <summary><h2>Opening in Unity Editor</h2></summary>
@@ -42,6 +43,7 @@ Windows, Linux, and Mac Builds are still on [itch.io](https://arianlust.itch.io/
   * [BluCor](https://github.com/BluCorDev)
   * [Frosty Cake](https://github.com/xFrostyCake123)
   * [Windows10V](https://github.com/Windows10V1)
+  * [vic](https://github.com/vlcoo)
   
 </details>
   
