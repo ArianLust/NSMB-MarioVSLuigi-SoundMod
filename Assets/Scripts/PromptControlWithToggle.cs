@@ -10,6 +10,8 @@ public class PromptControlWithToggle : MonoBehaviour
     // Reference to the toggle component
     public Toggle togglePrompt;
 
+    private static bool isSessionIgnored = false;
+
     void Start()
     {
         Debug.Log("Starting PromptControlWithToggle script...");
@@ -17,9 +19,10 @@ public class PromptControlWithToggle : MonoBehaviour
         // Check if the prompt has been permanently dismissed
         bool isPermanentlyDismissed = PlayerPrefs.GetInt("PromptDismissed", 0) == 1;
 
-        if (isPermanentlyDismissed)
+        // Check if the prompt has been dismissed for this session
+        if (isPermanentlyDismissed || isSessionIgnored)
         {
-            Debug.Log("Prompt has been permanently dismissed. Deactivating...");
+            Debug.Log("Prompt has been permanently dismissed or ignored for this session. Deactivating...");
             gameObject.SetActive(false);
         }
         else
@@ -52,7 +55,7 @@ public class PromptControlWithToggle : MonoBehaviour
         {
             // Set initial state based on whether the prompt is permanently dismissed
             togglePrompt.isOn = !isPermanentlyDismissed;
-            togglePrompt.onValueChanged.AddListener(delegate { TogglePrompt(togglePrompt.isOn); });
+            togglePrompt.onValueChanged.AddListener(OnToggleValueChanged);
         }
         else
         {
@@ -63,6 +66,9 @@ public class PromptControlWithToggle : MonoBehaviour
     void IgnoreForSession()
     {
         Debug.Log("Ignore for session button clicked. Dismissing prompt for this session...");
+        // Set the session ignored flag
+        isSessionIgnored = true;
+
         // Deactivate the game object for the current session
         gameObject.SetActive(false);
     }
@@ -76,24 +82,29 @@ public class PromptControlWithToggle : MonoBehaviour
 
         // Deactivate the game object
         gameObject.SetActive(false);
+
+        // Update the toggle to reflect the permanent dismissal
+        if (togglePrompt != null)
+        {
+            togglePrompt.isOn = false;
+        }
     }
 
-    void TogglePrompt(bool isOn)
+    void OnToggleValueChanged(bool isOn)
     {
         Debug.Log($"Toggle changed: {isOn}");
         if (isOn)
         {
-            Debug.Log("Restoring prompt state for future sessions...");
+            Debug.Log("Setting prompt to be shown in future sessions...");
             // Reset the flag to allow the prompt to show again in future sessions
             PlayerPrefs.SetInt("PromptDismissed", 0);
-            PlayerPrefs.Save();
         }
         else
         {
             Debug.Log("Setting prompt to be permanently dismissed...");
             // Set the flag to indicate the prompt has been permanently dismissed
             PlayerPrefs.SetInt("PromptDismissed", 1);
-            PlayerPrefs.Save();
         }
+        PlayerPrefs.Save();
     }
 }
