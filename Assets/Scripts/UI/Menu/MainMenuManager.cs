@@ -329,6 +329,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     }
     public void OnCreatedRoom() {
         Debug.Log($"[PHOTON] Created Room ({PhotonNetwork.CurrentRoom.Name})");
+        sfx.PlayOneShot(Enums.Sounds.UI_PlayerConnect.GetClip());
     }
     // CUSTOM EVENT CALLBACKS
     public void OnEvent(EventData e) {
