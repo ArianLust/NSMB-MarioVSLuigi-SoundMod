@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5478bfbe63c3c46b392d3ca752690c, type: 3}
+  m_Name: MusicLevelOverworld
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7e325b6da609d8b42ad33e92b447ae24, type: 3}
+  fastClip: {fileID: 8300000, guid: 0023f876f4ca4d9448d14e8329b96fb4, type: 3}
+  loopStartSample: 7.039
+  loopEndSample: 45.232
