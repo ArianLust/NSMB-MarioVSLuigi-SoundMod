@@ -3586,7 +3586,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\n<color=blue>Mod by</color>\nLust\n\n<color=blue>Mod Contributors</color>\nModdimation
-    \nBluCor\nFrostyCake\nWindows10V\nvlco_o\n\n<color=yellow>Game by</color>\nipodtouch0218\n\n<color=yellow>Github
+    \nBluCor\nFrostyCake\nWindows10V\nvlco_o\nRENREN\n\n<color=yellow>Game by</color>\nipodtouch0218\n\n<color=yellow>Github
     Contributors</color>\nGradedWarrior\nTheMoogle\nSkillz\nSkarph\nZest\nkittenchilly\nAmy54Desu\nKraken\nShadowWalker13\nPerez\nmindnomad\n\n<color=yellow>Music</color>\nRENREN\n\n<color=yellow>QA
     Testing</color>\nTheCyVap\nShadow_Walker13\n\n<color=yellow>Level Design</color>\nSkarph\nTheCyVap\nmindnomad\n\n<color=yellow>Original
     Game / Resources</color>\nNew Super Mario Bros.\nNew Super Mario Bros. Wii\nSuper
@@ -36276,7 +36276,6 @@ MonoBehaviour:
   - MainMenu-C
   - MainMenu-D
   - MainMenu-E
-  - MainMenu-F
   - MainMenu-G
   - MainMenu-H
   - MainMenu-I
@@ -36284,6 +36283,8 @@ MonoBehaviour:
   - MainMenu-K
   - MainMenu-L
   - MainMenu-M
+  - MainMenu-N
+  - MainMenu-O
   musicDefault: {fileID: 0}
 --- !u!1 &891192737
 GameObject:
