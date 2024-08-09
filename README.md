@@ -1,4 +1,4 @@
-<a href="https://arianlust.itch.io/nsmbmvlsm">
+<a href="https://arianlust.github.io/">
   <p align="center">
     <img src="https://raw.githubusercontent.com/ArianLust/NSMB-MarioVsLuigi-SoundMod/nightly-soundmod/Assets/Sprites/UI/Menu/mvlosoundmodlogo.png?raw=true" alt="NSMB-MarioVsLuigiSoundMod Logo" width="350px">
   </p>
