@@ -45,6 +45,11 @@ public class SettingButtonManager : MonoBehaviour {
         Settings.SaveSettingsToPreferences();
     }
 
+    public void OnMusicRandToggle(Toggle toggle) {
+        Settings.musicRand = toggle.isOn;
+        Settings.SaveSettingsToPreferences();
+    }
+
 
     public void OnFullscreenToggle(Toggle toggle) {
         bool value = toggle.isOn;
