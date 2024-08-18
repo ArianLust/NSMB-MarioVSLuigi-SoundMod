@@ -2,34 +2,26 @@ using UnityEngine;
 
 public class MusicRandomizer : MonoBehaviour { 
     [SerializeField] private string[] musicList;
-    [SerializeField] private string musicNoRandom = "LevelOverworld";
+    [SerializeField] private string musicFallback = "LevelOverworld";
 
     public MusicData GetMusic() {
 
-        MusicData usedMusic;
-
-        if(Settings.Instance.musicRand && musicList.Length != 0) {
+        MusicData usedMusic = null;
+ 
+        if(musicList.Length != 0) {
             if (musicList.Length == 1) { //only one entry in array
                 usedMusic = LoadMusic(musicList[0]);
             } else {
                 int randMusicId = Random.Range(0, musicList.Length);
                 usedMusic = LoadMusic(musicList[randMusicId]);
             }
-        } else { // disabled randomizer
-            usedMusic = LoadMusic(musicNoRandom);
         }
 
         if (usedMusic != null) 
             return usedMusic;
 
-        Debug.Log("ERROR: Music could not be loaded! Trying musicNoRandom...");
-        usedMusic = LoadMusic(musicNoRandom);
+        usedMusic = LoadMusic(musicFallback);
         if(usedMusic != null)
-            return usedMusic;
-
-        Debug.Log("WARNING: Music loading failed! Trying default music...");
-        LoadMusic("LevelOverworld");
-        if(usedMusic != null) 
             return usedMusic;
 
         Debug.Log("ERROR: Music loading failed! Check the Music data any try again.");

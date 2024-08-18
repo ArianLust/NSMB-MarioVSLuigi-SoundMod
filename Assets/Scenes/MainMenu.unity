@@ -4091,7 +4091,7 @@ RectTransform:
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9206,7 +9206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random Music
+  m_text: Use classic themes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d42c556520644b148ada62f0b573e1a5, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8615ffc530d32d743ad868fa924bcb71, type: 2}
@@ -13364,7 +13364,7 @@ GameObject:
   - component: {fileID: 457518723}
   - component: {fileID: 457518722}
   m_Layer: 5
-  m_Name: ToggleMusicRand
+  m_Name: ToggleClassicMus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13519,7 +13519,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 887693665}
         m_TargetAssemblyTypeName: SettingButtonManager, Assembly-CSharp
-        m_MethodName: OnMusicRandToggle
+        m_MethodName: OnClassicMusicToggle
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 457518724}
@@ -19434,7 +19434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &536087968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27077,8 +27077,8 @@ RectTransform:
   m_Father: {fileID: 1664241379}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -27327,7 +27327,7 @@ RectTransform:
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -27846,7 +27846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &820727546
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35059,7 +35059,7 @@ MonoBehaviour:
   spectateToggle: {fileID: 455362}
   scoreboardToggle: {fileID: 1350505006}
   filterToggle: {fileID: 277481204}
-  musicRandToggle: {fileID: 457518724}
+  classicMusicToggle: {fileID: 457518724}
   playersContent: {fileID: 1404257470}
   playersPrefab: {fileID: 1752547999}
   chatContent: {fileID: 1603668784}
@@ -35313,7 +35313,7 @@ MonoBehaviour:
   - MainMenu-M
   - MainMenu-N
   - MainMenu-O
-  musicDefault: {fileID: 0}
+  musicFallback: LevelOverworld
 --- !u!1 &891192737
 GameObject:
   m_ObjectHideFlags: 0
@@ -41718,7 +41718,7 @@ RectTransform:
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -100642,8 +100642,8 @@ RectTransform:
   m_Father: {fileID: 1486647692}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -101160,8 +101160,8 @@ RectTransform:
   m_Father: {fileID: 816669721}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

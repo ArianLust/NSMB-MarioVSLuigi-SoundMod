@@ -45,8 +45,8 @@ public class SettingButtonManager : MonoBehaviour {
         Settings.SaveSettingsToPreferences();
     }
 
-    public void OnMusicRandToggle(Toggle toggle) {
-        Settings.musicRand = toggle.isOn;
+    public void OnClassicMusicToggle(Toggle toggle) {
+        Settings.classicMusic = toggle.isOn;
         Settings.SaveSettingsToPreferences();
     }
 

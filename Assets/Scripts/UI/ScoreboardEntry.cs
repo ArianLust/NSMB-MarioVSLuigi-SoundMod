@@ -33,21 +33,17 @@ public class ScoreboardEntry : MonoBehaviour {
     public void Update() {
         CheckForTextUpdate();
     
-    if (rainbowEnabled)
-       if (rainbowEnabled)
-       {
-        {
+        if (!rainbowEnabled)
+            return;
+
         if (nameText.text.Contains("Lust")) {
             nameText.color = Utils.GetLustColor();
-        }  else if (nameText.text.Contains("Moddimation")) {
+        } else if (nameText.text.Contains("Moddi")) {
             nameText.color = Utils.GetModdimationColor();
-        } 
-        else if (nameText.text.Contains("ipodtouch0218") || nameText.text.Contains("mindnomad") || nameText.text.Contains("MPS64") || nameText.text.Contains("Fawndue")) {
+        } else if (nameText.text.Contains("ipodtouch0218") || nameText.text.Contains("mindnomad") || nameText.text.Contains("MPS64") || nameText.text.Contains("Fawndue")) {
             nameText.color = Utils.GetRainbowColor();
         }
     }
-        }
-       }
 
     public void CheckForTextUpdate() {
         if (!target) {
