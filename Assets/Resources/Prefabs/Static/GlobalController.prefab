@@ -373,6 +373,7 @@ MonoBehaviour:
   fourByThreeRatio: 0
   scoreboardAlways: 0
   filter: 1
+  classicMusic: 0
 --- !u!82 &1776850482587567145
 AudioSource:
   m_ObjectHideFlags: 0

@@ -6,12 +6,12 @@ public class LoopingMusic : MonoBehaviour {
     public bool FastMusic {
         set {
             if (_fastMusic ^ value) {
-                float scaleFactor = value ? 0.8f : 1.25f;
+                float scaleFactor = value ? 1 / currentSong.speedUpFactor : currentSong.speedUpFactor;
                 float newTime = audioSource.time * scaleFactor;
 
                 if (currentSong.loopEndSample != -1) {
-                    float songStart = currentSong.loopStartSample * (value ? 0.8f : 1f);
-                    float songEnd = currentSong.loopEndSample * (value ? 0.8f : 1f);
+                    float songStart = currentSong.loopStartSample * (value ? 1 / currentSong.speedUpFactor : 1f);
+                    float songEnd = currentSong.loopEndSample * (value ? 1 / currentSong.speedUpFactor : 1f);
 
                     if (newTime >= songEnd)
                         newTime = songStart + (newTime - songEnd);
@@ -42,6 +42,7 @@ public class LoopingMusic : MonoBehaviour {
         audioSource.time = 0;
         audioSource.Play();
     }
+
     public void Stop() {
         audioSource.Stop();
     }
@@ -52,8 +53,8 @@ public class LoopingMusic : MonoBehaviour {
 
         if (currentSong.loopEndSample != -1) {
             float time = audioSource.time;
-            float songStart = currentSong.loopStartSample * (FastMusic ? 0.8f : 1f);
-            float songEnd = currentSong.loopEndSample * (FastMusic ? 0.8f : 1f);
+            float songStart = currentSong.loopStartSample * (FastMusic ? 1 / currentSong.speedUpFactor : 1f);
+            float songEnd = currentSong.loopEndSample * (FastMusic ? 1 / currentSong.speedUpFactor : 1f);
 
             if (time >= songEnd)
                 audioSource.time = songStart + (time - songEnd);
