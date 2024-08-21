@@ -1,12 +1,12 @@
 <a href="https://arianlust.github.io/">
   <p align="center">
-    <img src="https://raw.githubusercontent.com/ArianLust/NSMB-MarioVsLuigi-SoundMod/nightly-soundmod/Assets/Sprites/UI/Menu/mvlosoundmodlogo.png?raw=true" alt="NSMB-MarioVsLuigiSoundMod Logo" width="350px">
+    <img src="https://raw.githubusercontent.com/ArianLust/NSMB-MarioVsLuigi-SoundMod/Lite-SoundMod/Assets/Sprites/UI/Menu/NSMBVSSoundModLite.png?raw=true" alt="NSMB-MarioVsLuigiSoundMod Logo" width="350px">
   </p>
 </a>
 
 A Mod for the Fangame NSMB-MarioVSLuigi
 
-Includes all SFXs Music etc. on a way better sounding quality!
+Wanted to play SoundMod with less extras, because else you'd be overwhelmed or maybe just to save storage? This is for you! A Lite version of MvLO's Sound Mod!
 
 # PLEASE (EXTRA) CREDIT ME IF YOUR GOING TO USE THE SOUNDS!!!
 it really took ages and its the least you can do.
