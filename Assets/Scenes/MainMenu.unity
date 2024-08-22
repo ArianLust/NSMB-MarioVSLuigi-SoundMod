@@ -3451,8 +3451,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\n<color=blue>Mod by</color>\nLust\n\n<color=blue>Mod Contributors</color>\nModdimation
-    \nBluCor\nFrostyCake\nWindows10V\nvlco_o\nRENREN\n\n<color=yellow>Game by</color>\nipodtouch0218\n\n<color=yellow>Github
-    Contributors</color>\nGradedWarrior\nTheMoogle\nSkillz\nSkarph\nZest\nkittenchilly\nAmy54Desu\nKraken\nShadowWalker13\nPerez\nmindnomad\n\n<color=yellow>Music</color>\nRENREN\n\n<color=yellow>QA
+    \nBluCor\nFrostyCake\nWindows10V\nvlco_o\nRENREN\nCubbyCrazes\nvincells\n\n<color=yellow>Game
+    by</color>\nipodtouch0218\n\n<color=yellow>Github Contributors</color>\nGradedWarrior\nTheMoogle\nSkillz\nSkarph\nZest\nkittenchilly\nAmy54Desu\nKraken\nShadowWalker13\nPerez\nmindnomad\n\n<color=yellow>Music</color>\nRENREN\n\n<color=yellow>QA
     Testing</color>\nTheCyVap\nShadow_Walker13\n\n<color=yellow>Level Design</color>\nSkarph\nTheCyVap\nmindnomad\n\n<color=yellow>Original
     Game / Resources</color>\nNew Super Mario Bros.\nNew Super Mario Bros. Wii\nSuper
     Mario Maker 2\n(c) Nintendo\n\n<color=yellow>Asset Rippers</color>\nDemon2Warrior
@@ -8086,7 +8086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3, y: 0.175}
   m_AnchorMax: {x: 0.7, y: 0.225}
-  m_AnchoredPosition: {x: 140, y: 69.99997}
+  m_AnchoredPosition: {x: 140.00003, y: 69.99988}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &277481203

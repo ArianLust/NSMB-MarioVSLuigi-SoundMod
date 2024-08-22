@@ -16,4 +16,4 @@ MonoBehaviour:
   fastClip: {fileID: 8300000, guid: 80e50dd3f83d45f409cabbcd29186722, type: 3}
   loopStartSample: 2.966
   loopEndSample: 80.0025
-  speedUpFactor: 9
+  speedUpFactor: 1.111111
