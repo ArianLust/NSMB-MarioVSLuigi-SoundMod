@@ -8,6 +8,5 @@ public class MusicData : ScriptableObject
     public float loopStartSample;
     public float loopEndSample;
 
-    // Add the speedUpFactor with a default value of 1.25f
     public float speedUpFactor = 1.25f;
 }
