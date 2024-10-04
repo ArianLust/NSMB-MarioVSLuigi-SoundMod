@@ -598,7 +598,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         PhotonNetwork.LocalPlayer.SetCustomProperties(new() {
             [Enums.NetPlayerProperties.GameState] = null,
             [Enums.NetPlayerProperties.Status] = Debug.isDebugBuild || Application.isEditor,
-            [Enums.NetPlayerProperties.ModUser] = true,
+            [Enums.NetPlayerProperties.ModId] = 1,
         });
         if (updatePingCoroutine == null)
             updatePingCoroutine = StartCoroutine(UpdatePing());

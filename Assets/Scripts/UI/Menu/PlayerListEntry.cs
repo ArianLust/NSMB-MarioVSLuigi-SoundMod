@@ -33,7 +33,7 @@ public class PlayerListEntry : MonoBehaviour {
         if (nameText.text.Contains("Lust")) {
             nameText.color = Utils.GetLustColor();
         } 
-        else if (nameText.text.Contains("Moddimation")){
+        else if (nameText.text.Contains("Moddi")){
             nameText.color = Utils.GetModdimationColor();
         }
         else if (nameText.text.Contains("ipodtouch0218") || nameText.text.Contains("mindnomad") || nameText.text.Contains("MPS64") || nameText.text.Contains("Fawndue")) {
@@ -42,9 +42,12 @@ public class PlayerListEntry : MonoBehaviour {
     }
 
     public void UpdateText() {
+        // update color
         colorStrip.color = Utils.GetPlayerColor(player, 1f, 1f);
         enabled = player.HasRainbowName();
 
+        // icons
+        string characterSymbol = Utils.GetCharacterData(player).uistring;
         string permissionSymbol = "";
         if (player.IsMasterClient)
             permissionSymbol += "<sprite=5>";
@@ -53,7 +56,10 @@ public class PlayerListEntry : MonoBehaviour {
         if (status)
             permissionSymbol += "<sprite=26>";
 
-        string characterSymbol = Utils.GetCharacterData(player).uistring;
+        nameText.text = permissionSymbol + characterSymbol + player.GetUniqueNickname();
+
+
+        // get ping
         Utils.GetCustomProperty(Enums.NetPlayerProperties.Ping, out int ping, player.CustomProperties);
 
         string pingColor;
@@ -67,12 +73,16 @@ public class PlayerListEntry : MonoBehaviour {
             pingColor = "red";
         }
 
-        nameText.text = permissionSymbol + characterSymbol + player.GetUniqueNickname();
         pingText.text = $"<color={pingColor}>{ping}";
 
-        bool IconCheckSoundMod = Utils.GetCustomProperty(Enums.NetPlayerProperties.ModUser, out bool sss, player.CustomProperties);
-        iconText.text = IconCheckSoundMod ? "<sprite=50>" : "<sprite=49>"; // test sprites
+        // mod icon
+        bool isMod = Utils.GetCustomProperty(Enums.NetPlayerProperties.ModId, out int modId, player.CustomProperties);
+        if (!isMod)
+            modId = 0;
 
+        iconText.text = "<sprite=" + (49 + modId) + ">";
+
+        // idk
         Transform parent = transform.parent;
         int childIndex = 0;
         for (int i = 0; i < parent.childCount; i++) {
