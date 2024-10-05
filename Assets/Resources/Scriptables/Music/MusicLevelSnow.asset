@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5478bfbe63c3c46b392d3ca752690c, type: 3}
   m_Name: MusicLevelSnow
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 6b9a673f597ae1c498c53853d42dad1c, type: 3}
-  fastClip: {fileID: 8300000, guid: c8397f022029d1c49a9c7a267ce3dedf, type: 3}
+  clip: {fileID: 8300000, guid: 5c2c736971fb906449ae8991c750a673, type: 3}
+  fastClip: {fileID: 8300000, guid: 4aa24b4f401860e4198b8a252b09bdf4, type: 3}
   loopStartSample: 5.06
   loopEndSample: 68.225
+  speedUpFactor: 1.25

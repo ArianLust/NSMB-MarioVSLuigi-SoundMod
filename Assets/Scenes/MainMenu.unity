@@ -80466,7 +80466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Links
+  m_text: All of my other Mods
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d42c556520644b148ada62f0b573e1a5, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 5ade88ee859873b4882004e755013bf7, type: 2}
@@ -94775,9 +94775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b20c8da65e7ce347a90c39a9f193114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 1885309716}
-  speed: 0.5
-  colorOffset: 0.1
 --- !u!1 &1893897247
 GameObject:
   m_ObjectHideFlags: 0
