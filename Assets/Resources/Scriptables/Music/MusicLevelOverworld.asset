@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 5a36c6b350ae2a248adfa09008cd9400, type: 3}
   fastClip: {fileID: 8300000, guid: c8acf925fddb0a84ea8f76d10b77638f, type: 3}
-  loopStartSample: 7.039
-  loopEndSample: 45.232
+  loopStartSample: 7.049
+  loopEndSample: 45.238
   speedUpFactor: 1.25
