@@ -10,12 +10,13 @@ Includes all SFXs Music etc. on a way better sounding quality!
 
 <details>
   <summary><h2>How do I use Sound Mod for my Mod?</h2></summary>
-  Check out the [LITE Branch](https://github.com/ArianLust/NSMB-MarioVSLuigi-SoundMod/tree/Lite-SoundMod) of this Repository, as that branch contains the base content for Sound Mod, unless you want that extra stuff.
+  Check out the LITE Branch of this Repository, as that branch contains the base content for Sound Mod, unless you want that extra stuff.
 </details>
 <details>
   <summary><h2>How to credit me</h2></summary>
 In the About Section (Credits) please put this below the Mod Contributors
-"This Mod uses NSMB - Mario VS Luigi's Sound Mod made by Lust"
+<h2> "This Mod uses NSMB - Mario VS Luigi's Sound Mod made by Lust"
+</h2>
 </details>
 
 
@@ -43,15 +44,17 @@ Windows, Linux, Mac and android Builds are on [itch.io](https://arianlust.itch.i
 <details>
   <summary><h2>Credits</h2></summary>
   
-  ## Mod Creator:
+  <h2> Mod Creator:
   * [Lust](https://github.com/ArianLust)
+  </h2>
   
-  ### Contributors:
+  <h2> Contributors:
   * [Moddimation](https://github.com/Moddimation)
   * [BluCor](https://github.com/BluCorDev)
   * [Frosty Cake](https://github.com/xFrostyCake123)
   * [Windows10V](https://github.com/Windows10V1)
   * [vic](https://github.com/vlcoo)
+  </h2>
   
 </details>
   
