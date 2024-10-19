@@ -910,7 +910,7 @@ PrefabInstance:
         type: 3}
       propertyPath: classicMusic
       value: 
-      objectReference: {fileID: 11400000, guid: 2cfae2267b801f944813218ca08798fb,
+      objectReference: {fileID: 11400000, guid: a8723591ded852b418dd6111292b5cf6,
         type: 2}
     - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
