@@ -8,8 +8,12 @@ A Mod for the Fangame NSMB-MarioVSLuigi
 
 Includes all SFXs Music etc. on a way better sounding quality!
 
-# PLEASE (EXTRA) CREDIT ME IF YOUR GOING TO USE THE SOUNDS!!!
-it really took ages and its the least you can do.
+<details>
+  <summary><h2>How to credit me</h2></summary>
+In the About Section (Credits) please put this below the Mod Contributors
+"This Mod uses NSMB - Mario VS Luigi's Sound Mod made by Lust"
+</details>
+
 
 
 ## Download
