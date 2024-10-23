@@ -44,16 +44,20 @@ Windows, Linux, Mac and android Builds are on [itch.io](https://arianlust.itch.i
 <details>
   <summary><h2>Credits</h2></summary>
   
-  <h2> Mod Creator:
+  ### Mod Creator:
   * [Lust](https://github.com/ArianLust)
   </h2>
   
-  <h2> Contributors:
+  ### Contributors:
   * [Moddimation](https://github.com/Moddimation)
   * [BluCor](https://github.com/BluCorDev)
   * [Frosty Cake](https://github.com/xFrostyCake123)
   * [Windows10V](https://github.com/Windows10V1)
   * [vic](https://github.com/vlcoo)
+  * [RENREN](https://mistajub.bandcamp.com/)
+  * [CubbyCrazes](https://www.youtube.com/@cubbycrazes)
+  * [vincells](https://vincells.bandcamp.com/)
+  * [Liam Nayru](https://www.youtube.com/@LiamNayru)
   </h2>
   
 </details>
