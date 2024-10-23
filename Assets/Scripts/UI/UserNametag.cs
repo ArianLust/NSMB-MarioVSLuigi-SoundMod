@@ -67,12 +67,12 @@ public class UserNametag : MonoBehaviour {
 
         text.text += Utils.GetSymbolString($"Sx{parent.stars}");
     
-if (rainbowName) { 
+        if (rainbowName) { 
              if (text.text.Contains("Lust"))
             {
                 text.color = Utils.GetLustColor();
             }
-            else if (text.text.Contains("Moddimation"))
+            else if (text.text.Contains("Moddi"))
             {
                 text.color = Utils.GetModdimationColor();
             }

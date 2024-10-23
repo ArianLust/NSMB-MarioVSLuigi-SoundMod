@@ -33,7 +33,8 @@ public class Settings : Singleton<Settings> {
     public string nickname;
     public int character, skin;
     public bool ndsResolution = false, fireballFromSprint = true, vsync = false, fourByThreeRatio = false;
-    public bool scoreboardAlways = false, filter = true;
+    public bool scoreboardAlways = true, filter = true, classicMusic = true;
+    // NOTE default values are the second parameters in LoadSettingsFromPreferences()
 
     public void Awake() {
         if (!InstanceCheck())
@@ -44,10 +45,12 @@ public class Settings : Singleton<Settings> {
         ApplyVolumeSettings();
     }
 
-    public void LoadSettingsFromPreferences() {
+    public void LoadSettingsFromPreferences() {        
         nickname = PlayerPrefs.GetString("Nickname");
-        if (nickname == null || nickname == "")
+        if (nickname == null || nickname == "") {
             nickname = "Player" + Random.Range(1000, 10000);
+            Debug.Log("Reset username to "+nickname);
+        }
 
         VolumeSFX = PlayerPrefs.GetFloat("volumeSFX", 0.5f);
         VolumeMusic = PlayerPrefs.GetFloat("volumeMusic", 0.25f);
@@ -58,6 +61,7 @@ public class Settings : Singleton<Settings> {
         fourByThreeRatio = PlayerPrefs.GetInt("NDS4by3", 0) == 1;
         scoreboardAlways = PlayerPrefs.GetInt("ScoreboardAlwaysVisible", 1) == 1;
         filter = PlayerPrefs.GetInt("ChatFilter", 1) == 1;
+        classicMusic = PlayerPrefs.GetInt("ClassicMusicomize", 1) == 1;
         character = PlayerPrefs.GetInt("Character", 0);
         skin = PlayerPrefs.GetInt("Skin", 0);
     }
@@ -72,6 +76,7 @@ public class Settings : Singleton<Settings> {
         PlayerPrefs.SetInt("NDS4by3", fourByThreeRatio ? 1 : 0);
         PlayerPrefs.SetInt("ScoreboardAlwaysVisible", scoreboardAlways ? 1 : 0);
         PlayerPrefs.SetInt("ChatFilter", filter ? 1 : 0);
+        PlayerPrefs.SetInt("ClassicMusicomize", classicMusic ? 1 : 0);
         PlayerPrefs.SetInt("Character", character);
         PlayerPrefs.SetInt("Skin", skin);
         PlayerPrefs.Save();

@@ -30,7 +30,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     public TMP_Dropdown levelDropdown, characterDropdown;
     public RoomIcon selectedRoomIcon, privateJoinRoom;
     public Button joinRoomBtn, createRoomBtn, startGameBtn;
-    public Toggle ndsResolutionToggle, fullscreenToggle, livesEnabled, powerupsEnabled, timeEnabled, drawTimeupToggle, fireballToggle, vsyncToggle, privateToggle, privateToggleRoom, aspectToggle, spectateToggle, scoreboardToggle, filterToggle;
+    public Toggle ndsResolutionToggle, fullscreenToggle, livesEnabled, powerupsEnabled, timeEnabled, drawTimeupToggle, fireballToggle, vsyncToggle, privateToggle, privateToggleRoom, aspectToggle, spectateToggle, scoreboardToggle, filterToggle, classicMusicToggle;
     public GameObject playersContent, playersPrefab, chatContent, chatPrefab;
     public TMP_InputField nicknameField, starsText, coinsText, livesField, timeField, lobbyJoinField, chatTextField;
     public Slider musicSlider, sfxSlider, masterSlider, lobbyPlayersSlider, changePlayersSlider;
@@ -268,6 +268,9 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             }
 
             AuthenticationHandler.Authenticate(PlayerPrefs.GetString("id", null), PlayerPrefs.GetString("token", null), lastRegion);
+
+            if(pingSortedRegions == null)
+                return;
 
             for (int i = 0; i < pingSortedRegions.Length; i++) {
                 Region r = pingSortedRegions[i];
@@ -527,6 +530,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         vsyncToggle.isOn = Settings.Instance.vsync;
         scoreboardToggle.isOn = Settings.Instance.scoreboardAlways;
         filterToggle.isOn = Settings.Instance.filter;
+        classicMusicToggle.isOn = Settings.Instance.classicMusic;
         QualitySettings.vSyncCount = Settings.Instance.vsync ? 1 : 0;
     }
 
@@ -594,11 +598,11 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         ChangePrivate();
 
         StartCoroutine(SetScroll());
-
+        
         PhotonNetwork.LocalPlayer.SetCustomProperties(new() {
             [Enums.NetPlayerProperties.GameState] = null,
             [Enums.NetPlayerProperties.Status] = Debug.isDebugBuild || Application.isEditor,
-            [Enums.NetPlayerProperties.ModUser] = true,
+            [Enums.NetPlayerProperties.ModId] = 1, // MODID
         });
         if (updatePingCoroutine == null)
             updatePingCoroutine = StartCoroutine(UpdatePing());
@@ -1293,7 +1297,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         textComp.color = color;
     }
     public void OpenLinks() {
-        Application.OpenURL("https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/blob/master/LINKS.md");
+        Application.OpenURL("https://github.com/ArianLust/ArianLust/blob/main/Mods.md");
     }
     public void Quit() {
         if (quit)

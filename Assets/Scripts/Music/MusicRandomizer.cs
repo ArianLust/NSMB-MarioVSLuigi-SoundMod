@@ -2,30 +2,30 @@ using UnityEngine;
 
 public class MusicRandomizer : MonoBehaviour { 
     [SerializeField] private string[] musicList;
-    [SerializeField] private MusicData musicDefault;
+    [SerializeField] private string musicFallback = "LevelOverworld";
 
     public MusicData GetMusic() {
 
-        MusicData usedMusic;
-
-        if (musicList == null || musicList.Length < 1) //array empty, choosing default
-            usedMusic = musicDefault;
-
-        else if (musicList.Length == 1) //only one entry in array
-            usedMusic = LoadMusic(musicList[0]);
-
-        else {
-            int randMusicId = Random.Range(0, musicList.Length);
-            usedMusic = LoadMusic(musicList[randMusicId]);
+        MusicData usedMusic = null;
+ 
+        if(musicList.Length != 0) {
+            if (musicList.Length == 1) { //only one entry in array
+                usedMusic = LoadMusic(musicList[0]);
+            } else {
+                int randMusicId = Random.Range(0, musicList.Length);
+                usedMusic = LoadMusic(musicList[randMusicId]);
+            }
         }
 
-        if (usedMusic == null) {
-            Debug.Log("ERROR: Music could not be loaded! Trying default...");
-            usedMusic = musicDefault;
-            Debug.Log("ERROR: Default Music could not be loaded! Check if set properly. Using \"LevelOverworld\"");
-	    if(usedMusic == null) LoadMusic("LevelOverworld");
-        }
-       
+        if (usedMusic != null) 
+            return usedMusic;
+
+        usedMusic = LoadMusic(musicFallback);
+        if(usedMusic != null)
+            return usedMusic;
+
+        Debug.Log("ERROR: Music loading failed! Check the Music data any try again.");
+
         Destroy(this);
         return usedMusic;
     }
@@ -38,8 +38,8 @@ public class MusicRandomizer : MonoBehaviour {
 
         //check loader null
         if(loadedMusic == null) {
-            Debug.Log("ERROR: Music \'"+name+"\' doesnt exist! Path: Resources/"+fileName+". Trying default...");
-            return musicDefault;
+            Debug.Log("ERROR: Music \'"+name+"\' doesnt exist! Path: Resources/"+fileName+".");
+            return null;
         }
 
         return loadedMusic;

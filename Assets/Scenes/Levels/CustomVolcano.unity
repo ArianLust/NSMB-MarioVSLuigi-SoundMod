@@ -22388,6 +22388,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1258588545946810629, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: musicList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258588545946810629, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: musicList.Array.data[0]
+      value: LevelVolcano
+      objectReference: {fileID: 0}
     - target: {fileID: 1884295610320806407, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
       propertyPath: m_RootOrder
@@ -22448,6 +22458,12 @@ PrefabInstance:
       propertyPath: cameraMinY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: classicMusic
+      value: 
+      objectReference: {fileID: 11400000, guid: 1161df553f458014bb9eec21dd068ab2,
+        type: 2}
     - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
       propertyPath: loopingLevel

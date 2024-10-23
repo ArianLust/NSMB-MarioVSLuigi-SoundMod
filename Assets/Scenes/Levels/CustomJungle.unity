@@ -361,6 +361,16 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1258588545946810629, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: musicList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258588545946810629, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: musicList.Array.data[0]
+      value: LevelJungle
+      objectReference: {fileID: 0}
     - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
       propertyPath: loop
@@ -386,6 +396,12 @@ PrefabInstance:
       propertyPath: mainMusic
       value: 
       objectReference: {fileID: 11400000, guid: 2cfae2267b801f944813218ca08798fb,
+        type: 2}
+    - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
+      propertyPath: classicMusic
+      value: 
+      objectReference: {fileID: 11400000, guid: 8e6c9aa2bf1667641b4473e143ac1ca4,
         type: 2}
     - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}

@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         }
         private set => _instance = value;
     }
-    public MusicData invincibleMusic, megaMushroomMusic;
+    public MusicData classicMusic, invincibleMusic, megaMushroomMusic;
     [HideInInspector] public MusicData mainMusic;
 
     public int levelMinTileX, levelMinTileY, levelWidthTile, levelHeightTile;
@@ -426,7 +426,8 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         loopMusic = GetComponent<LoopingMusic>();
         coins = GameObject.FindGameObjectsWithTag("coin");
         levelUIColor.a = .7f;
-        mainMusic = GetComponent<MusicRandomizer>().GetMusic();
+
+        StartMusicPlayer();
 
         InputSystem.controls.LoadBindingOverridesFromJson(GlobalController.Instance.controlsJson);
 
@@ -562,6 +563,12 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
 
         if (canvas)
             SceneManager.UnloadSceneAsync("Loading");
+    }
+
+    void StartMusicPlayer(){
+        mainMusic = Settings.Instance.classicMusic && classicMusic 
+            ? classicMusic 
+            : GetComponent<MusicRandomizer>().GetMusic();
     }
 
     IEnumerator CountdownSound(float t, float times) { //The match countdown sound system. t is the tempo, and times is the # of times the sound will play (variable if match is started at 10s or less)

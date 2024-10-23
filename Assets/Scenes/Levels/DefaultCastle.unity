@@ -11565,6 +11565,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
         type: 3}
+      propertyPath: classicMusic
+      value: 
+      objectReference: {fileID: 11400000, guid: d991a9d13a329244e864b2e6dea45fee,
+        type: 2}
+    - target: {fileID: 5500062339093502114, guid: 43d56bd18d06e9b4abe323618a20a228,
+        type: 3}
       propertyPath: spawnpoint.x
       value: -17.5
       objectReference: {fileID: 0}

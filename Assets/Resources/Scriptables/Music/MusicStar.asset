@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5478bfbe63c3c46b392d3ca752690c, type: 3}
   m_Name: MusicStar
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: b8aafd70b5868854dbd856609cd4453b, type: 3}
-  fastClip: {fileID: 8300000, guid: 9b3927eb1bd39804abc9974f0f3336e0, type: 3}
+  clip: {fileID: 8300000, guid: 98a04fc4c59a21a49852622c407da867, type: 3}
+  fastClip: {fileID: 8300000, guid: 4ac9054b25749c74d9662f98f65d51f2, type: 3}
   loopStartSample: 13.756
   loopEndSample: 31.543
+  speedUpFactor: 1.25
