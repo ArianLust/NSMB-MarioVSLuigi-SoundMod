@@ -8,8 +8,17 @@ A Mod for the Fangame NSMB-MarioVSLuigi
 
 Wanted to play SoundMod with less extras, because else you'd be overwhelmed or maybe just to save storage? This is for you! A Lite version of MvLO's Sound Mod!
 
-# PLEASE (EXTRA) CREDIT ME IF YOUR GOING TO USE THE SOUNDS!!!
-it really took ages and its the least you can do.
+<details>
+  <summary><h2>How do I use Sound Mod for my Mod?</h2></summary>
+  Good Job checking out the LITE Branch, you can get the sounds from here without getting the extra stuff that is in sound mod! Just remember to credit :)
+</details>
+<details>
+  <summary><h2>How to credit me</h2></summary>
+In the About Section (Credits) please put this below the Mod Contributors
+<h2> "This Mod uses NSMB - Mario VS Luigi's Sound Mod made by Lust"
+</h2>
+</details>
+
 
 
 ## Download
@@ -35,15 +44,17 @@ Windows, Linux, Mac and android Builds are on [itch.io](https://arianlust.itch.i
 <details>
   <summary><h2>Credits</h2></summary>
   
-  ## Mod Creator:
+  <h2> Mod Creator:
   * [Lust](https://github.com/ArianLust)
+  </h2>
   
-  ### Contributors:
+  <h2> Contributors:
   * [Moddimation](https://github.com/Moddimation)
   * [BluCor](https://github.com/BluCorDev)
   * [Frosty Cake](https://github.com/xFrostyCake123)
   * [Windows10V](https://github.com/Windows10V1)
   * [vic](https://github.com/vlcoo)
+  </h2>
   
 </details>
   
